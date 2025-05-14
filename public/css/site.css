@@ -1,0 +1,252 @@
+/* c:\Projects\International_Bank\wwwroot\css\site.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login Page Styling */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.login-header {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form .form-floating {
+  margin-bottom: 15px;
+}
+
+.login-form .form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.login-form .button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.login-form .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-form .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Register Page Styling */
+.register-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.register-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+}
+
+.register-header {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form .form-floating {
+  margin-bottom: 15px;
+}
+
+.register-form .form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.register-form .button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.register-form .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-form .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.register-form .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Transactions Page Styling */
+.transactions-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.transactions-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.transactions-header {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.transaction-alert {
+  margin-bottom: 20px;
+}
+
+.transaction-form .btn-success {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody td {
+  padding: 0.75rem;
+  text-align: left;
+  border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Modal */
+.modal-header {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #333; /* Dark gray */
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d; /* Gray */
+  color: white;
+  border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #5a6268; /* Darker gray */
+}
+
+/*Alerts*/
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
