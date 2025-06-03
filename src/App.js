@@ -7,6 +7,8 @@ import EmployeeDashboard from './components/EmployeeDashboard';
 import Dashboard from './components/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout';
+import CreateCustomer from './components/CreateCustomer';
+import ManageUsers from './components/ManageUser';
 
 const App = () => {
   return (
@@ -29,6 +31,21 @@ const App = () => {
             <Layout><Dashboard /></Layout>
           </ProtectedRoute>
         } />
+
+      <Route path="/create-customer" element={
+        <ProtectedRoute allowedRoles={['Employee']}>
+          <Layout><CreateCustomer /></Layout>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/manage-users" element={
+      <ProtectedRoute allowedRoles={['Employee']}>
+        <Layout>
+          <ManageUsers />
+        </Layout>
+      </ProtectedRoute>
+      } />
+
 
         {/* Employee Routes */}
         <Route path="/employee" element={

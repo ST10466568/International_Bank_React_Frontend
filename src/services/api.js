@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5248/api',
+  baseURL: 'https://localhost:7159/api',
 });
 
 // Auto-attach token from localStorage

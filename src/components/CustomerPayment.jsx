@@ -50,10 +50,16 @@ const CustomerPayment = () => {
       const modal = bootstrap.Modal.getInstance(document.getElementById('recipientModal'));
       modal?.hide();
     } catch (error) {
-      setAlert({
-        type: 'danger',
-        message: error.response?.data?.message || 'Payment failed. Please try again.'
-      });
+      let message = 'Payment failed. Please try again.';
+    
+      if (error.response?.data?.errors) {
+        const errors = error.response.data.errors;
+        message = Object.values(errors).flat().join(' ');
+      } else if (error.response?.data?.message) {
+        message = error.response.data.message;
+      }
+    
+      setAlert({ type: 'danger', message });
     } finally {
       setIsLoading(false);
     }
@@ -70,7 +76,7 @@ const CustomerPayment = () => {
           </div>
         )}
 
-        <form className="payment-form">
+        <form className="payment-form">    
           <div className="form-floating mb-3">
             <input
               type="number"

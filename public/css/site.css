@@ -10,8 +10,8 @@ body {
 .login-page-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f4f4f4;
 }
 
@@ -131,9 +131,8 @@ body {
 /* Transactions Page Styling */
 .transactions-page-container {
   display: flex;
+  padding-top: 20px;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background-color: #f4f4f4;
 }
 
